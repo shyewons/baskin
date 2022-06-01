@@ -1,0 +1,139 @@
+.menu-title {
+    background: url(images/menu/bg_main_menu.gif) no-repeat;
+    height: 310px;
+    width: 100%;
+    display: block;
+    background-position-x: 50%;
+}
+
+/* 타이틀 정렬 */
+
+.name {
+    display: flex;
+    align-items: center;
+    margin: 110px 0 20px;
+    justify-content: center;
+}
+
+.name img {
+    margin: 0 7px;
+}
+
+.name::before,
+.name::after {
+    content: "";
+    width: 500px;
+    height: 1px;
+    background: #ff7c98;
+}
+
+.month-area .name::before,
+.month-area .name::after {
+    width: 458px;
+}
+
+.icecream-area .name::before,
+.icecream-area .name::after {
+    width: 489px
+}
+
+.icecreamcake-area .name::before,
+.icecreamcake-area .name::after {
+    width: 458px;
+}
+
+.beverage-area .name::before,
+.beverage-area .name::after {
+    width: 487px;
+}
+
+.coffee-area .name::before,
+.coffee-area .name::after {
+    width: 502px;
+}
+
+.dessert-area .name::before,
+.dessert-area .name::after {
+    width: 496px;
+}
+
+
+/* 이달의 맛 */
+
+.month-area {
+    text-align: center;
+}
+
+.month-area > img {
+    margin: 45px auto;
+}
+
+/* 메뉴 */
+
+.product-list {
+    text-align: center;
+    overflow: hidden;
+}
+
+.product-list .more-btn {
+    border: 2px solid #ece2de;
+    border-radius: 15px;
+    color: #a48e74;
+    padding: 4px 20px;
+    font-size: 11px;
+}
+
+.list {
+    border: 1px solid #eee;
+    border-right: none;
+    display: flex;
+    margin: 30px auto;
+    width: 1200px;
+}
+
+.item {
+    width: 25%;
+    border-right: 1px solid #eee;
+    padding: 25px 0 0;
+}
+
+.item p:first-child {
+    font-weight: 500;
+}
+
+.item .item-hash {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.item p {
+    margin: 5px auto;
+}
+
+.item button {
+    color: #fff;
+    background: #d3c1ab;
+    border: none;
+    border-radius: 15px;
+    font-size: 11px;
+    padding: 3px 15px;
+    display: block;
+    margin: 7px auto;
+    cursor: pointer;
+}
+
+.item img {
+    width: 170px;
+    height: 170px;
+}
+
+.item .icecream-bg {
+    background: url(images/menu/bg_icecream_corn_3.png) no-repeat;
+    background-size: 20%;
+    background-position: 120px 190px ;
+    display: block;
+    height: 250px;
+    width: 100%;
+}
+
+

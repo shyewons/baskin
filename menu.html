@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/78cbb34de2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <title>배스킨라빈스</title>
+</head>
+<body>
+    <div class="body-container">
+        <header>
+            <div class="header-container">
+                <div class="top-area">
+                    <div class="center">
+                        <ul class="sns">
+                            <li><a href="https://www.facebook.com/baskinrobbinskr/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                            <li><a href="https://twitter.com/BaskinrobbinsKR"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                            <li><a href="http://blog.naver.com/brgirl31"><img src="images/icon_blog.png" alt="blog"></a></li>
+                            <li><a href="https://www.instagram.com/baskinrobbinskorea/"><img src="images/icon_instgram.png" alt="instagram"></a></li>
+                            <li><a href="https://www.youtube.com/user/baskinrobbinskorea"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                        </ul>
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo_baskinrobbins.png" alt="br_logo"></a>
+                        </div>
+                        <div class="contact">
+                            <ul>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                                <li class="search">
+                                    <a href="#" class="search-icon"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-background"></div>
+                    <div class="search-area">
+                        <div class="search-wrap">
+                            <div class="product-name">
+                                <span>제품명</span>
+                                <select name="menu" id="search-menu">
+                                    <option value="all">전체</option>
+                                    <option value="icecream">아이스크림</option>
+                                    <option value="icecreamcake">아이스크림케이크</option>
+                                    <option value="beverage">음료</option>
+                                    <option value="coffee">커피</option>
+                                    <option value="dessert">디저트</option>
+                                    <option value="block-pack">block-pack</option>
+                                    <option value="ready-pack">ready-pack</option>
+                                </select>
+                                <input type="text">
+                            </div>
+                            <div class="hash-tag">
+                                <span>해시태그</span>
+                                <input type="text">
+                                <div class="tag-wrap">
+                                    <p>· 자주 찾는 해시태그</p>
+                                    <a href="#">#해시태그명</a>
+                                    <a href="#">#해시태그명</a>
+                                    <a href="#">#해시태그명</a>
+                                </div>
+                            </div>
+                            <div class="allergy">
+                                <span>알레르기 성분</span>
+                                <ul class="allergy_checkbox">
+                                    <li><input type="checkbox">계란</li>
+                                    <li><input type="checkbox">대두</li>
+                                    <li><input type="checkbox">돼지고기</li>
+                                    <li><input type="checkbox">땅콩</li> <br>
+                                    <li><input type="checkbox">밀</li>
+                                    <li><input type="checkbox">복숭아</li>
+                                    <li><input type="checkbox">우유</li>
+                                    <li><input type="checkbox">없음</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-btn-wrap"><button id="search-btn">검색</button></div>
+                    </div>
+                </div>
+    
+                <div class="mega-area">
+                    <div class="center">
+                        <ul class="login-wrap">
+                            <li class="login"><a href="#">LOGIN</a></li>
+                            <li class="join"><a href="#">JOIN</a></li>
+                        </ul>
+                        <div id="mb-wrap">
+                            <ul class="menu">
+                                <li class="menu-wrap menu-month">
+                                    <div class="menu-main">
+                                        <a href="#">FLAVOR OF THE MONTH</a>
+                                    </div>
+                                    <div class="menu-sub">
+                                        <a href="#" class="month-bg">
+                                            <img src="images/img_monthly_fom_220228.png" alt="FLAVOR OF THE MONTH">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-wrap menu-menu">
+                                    <div class="menu-main">
+                                        <a href="#">MENU</a>
+                                    </div>
+                                    <ul class="menu-sub">
+                                        <li><a href="#">아이스크림</a></li>
+                                        <li><a href="#">아이스크림케이크</a></li>
+                                        <li><a href="#">음료</a></li>
+                                        <li><a href="#">커피</a></li>
+                                        <li><a href="#">디저트</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-wrap menu-ar">
+                                    <div class="menu-main">
+                                        <a href="#">영양 성분 및 알레르기</a>
+                                    </div>
+                                    <ul class="menu-sub">
+                                        <li><a href="#">아이스크림</a></li>
+                                        <li><a href="#">음료</a></li>
+                                        <li><a href="#">커피</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-wrap menu-event">
+                                    <div class="menu-main">
+                                        <a href="event.html">EVENT</a>
+                                    </div>
+                                    <ul class="menu-sub">
+                                        <li><a href="event.html">진행중이벤트</a></li>
+                                        <li><a href="#">당첨자발표</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-wrap menu-store">
+                                    <div class="menu-main">
+                                        <a href="#">STORE</a>
+                                    </div>
+                                    <ul class="menu-sub">
+                                        <li><a href="#">매장찾기</a></li>
+                                        <li><a href="#">고객센터</a></li>
+                                        <li><a href="#">단체주문</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-wrap menu-about">
+                                    <div class="menu-main">
+                                        <a href="#">ABOUT</a>
+                                    </div>
+                                    <ul class="menu-sub">
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">채용정보</a></li>
+                                        <li><a href="#">점포개설문의</a></li>
+                                        <li><a href="#">CONTACT US</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="menu-bg">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="menu-container">
+            <div class="title-area">
+                <div class="menu-title"></div>
+            </div>
+            <div class="product-area center">
+                <div class="product-list month-area">
+                    <div class="name">
+                        <img src="images/menu/icon_title_1.png" alt="icon1">
+                        <img src="images/menu/h_title_T.png" alt="month-title">
+                        <img src="images/menu/icon_title_2.png" alt="icon2">
+                    </div>
+                    <img src="images/menu/1646198721-56.jpg" alt="">
+                </div>
+                <div class="product-list icecream-area">
+                    <div class="name">
+                        <img src="images/menu/icon_title_1.png" alt="icon1">
+                        <img src="images/menu/h_title_A.png" alt="month-title">
+                        <img src="images/menu/icon_title_2.png" alt="icon2">
+                    </div>
+                    <a href="#" class="more-btn">MORE</a>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="icecream-bg">
+                                <p>오레오 쿠키 앤 스트로베리</p>
+                                <p class="item-hash">#오레오 #딸기</p>
+                                <button>구매</button>
+                                <img src="images/menu/1643851538.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="icecream-bg">
+                                <p>엄마는 외계인</p>
+                                <p class="item-hash">#초콜릿 #초코볼</p>
+                                <button>구매</button>
+                                <img src="images/menu/1528197022.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="icecream-bg">
+                                <p>민트 초콜릿 칩</p>
+                                <p class="item-hash">#민트 #초콜릿칩</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648796203.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="icecream-bg">
+                                <p>뉴욕 치즈 케이크</p>
+                                <p class="item-hash">#치즈 #치즈케이크</p>
+                                <button>구매</button>
+                                <img src="images/menu/1530775918.png" alt="strawberry">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-list icecreamcake-area">
+                    <div class="name">
+                        <img src="images/menu/icon_title_1.png" alt="icon1">
+                        <img src="images/menu/h_title_B.png" alt="month-title">
+                        <img src="images/menu/icon_title_2.png" alt="icon2">
+                    </div>
+                    <a href="#" class="more-btn">MORE</a>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1643852214.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648773836.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648802208.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648773875.png" alt="strawberry">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-list beverage-area">
+                    <div class="name">
+                        <img src="images/menu/icon_title_1.png" alt="icon1">
+                        <img src="images/menu/h_title_C.png" alt="month-title">
+                        <img src="images/menu/icon_title_2.png" alt="icon2">
+                    </div>
+                    <a href="#" class="more-btn">MORE</a>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="icecream-bg">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1643851538.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="icecream-bg">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1528197022.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="icecream-bg">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648796203.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="icecream-bg">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1530775918.png" alt="strawberry">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-list coffee-area">
+                    <div class="name">
+                        <img src="images/menu/icon_title_1.png" alt="icon1">
+                        <img src="images/menu/h_title_D.png" alt="month-title">
+                        <img src="images/menu/icon_title_2.png" alt="icon2">
+                    </div>
+                    <a href="#" class="more-btn">MORE</a>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1643851538.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1528197022.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648796203.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1530775918.png" alt="strawberry">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-list dessert-area">
+                    <div class="name">
+                        <img src="images/menu/icon_title_1.png" alt="icon1">
+                        <img src="images/menu/h_title_E.png" alt="month-title">
+                        <img src="images/menu/icon_title_2.png" alt="icon2">
+                    </div>
+                    <a href="#" class="more-btn">MORE</a>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#해시태그 #해시태그</p>
+                                <button>구매</button>
+                                <img src="images/menu/1643852214.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#초콜릿 #초코볼</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648773836.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#민트 #초콜릿칩</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648802208.png" alt="strawberry">
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="#">
+                                <p>상품명</p>
+                                <p class="item-hash">#치즈 #치즈케이크</p>
+                                <button>구매</button>
+                                <img src="images/menu/1648773875.png" alt="strawberry">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    
+        <footer>
+            <div class="footer-menu-area">
+                <div class="center">
+                    <a href="#">점포개설문의</a>
+                    <a href="#">채용문의</a>
+                    <a href="#">윤리신고센터</a>
+                    <a href="#">이용약관</a>
+                    <a href="#" class="notice-pink">개인정보처리방침</a>
+                    <a href="#">영상정보처리기기운영관리방침</a>
+                    <a href="#">거래희망회사 사전등록</a>
+                </div>
+            </div>
+            <div class="ather-site-area">
+                <div class="center">
+                    <ul class="site-list">
+                        <li><a href="#"><img src="images/btn_happypoint.png" alt="happypoint"></a></li>
+                        <li><a href="#"><img src="images/btn_happymarket.png" alt="happymarketa"></li>
+                        <li><a href="#"><img src="images/btn_spc_story.png" alt="spc_story"></a>  </li>
+                        <li>
+                            <div class="kr-site">
+                                <a href="#"><img src="images/btn_norton.gif" alt="norton"></a>
+                                <a href="#"><img src="images/btn_ksa.png" alt="ksa"></a>
+                                <a href="#"><img src="images/btn_ccm.gif" alt="ccm"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="family-site">
+                        <button class="family-btn">FAMILY SITE <i class="fa-solid fa-angle-up"></i></button>
+                        <ul class="ab">
+                            <li>family1</li>
+                            <li>family2</li>
+                            <li>family3</li>
+                            <li>family4</li>
+                            <li>family5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="address-area">
+                <img src="images/footer_logo.png" alt="footer_logo">
+                <p>사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 도세호 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+                <p>TEL : 080-555-3131 개인정보관리책임자 : 김경우</p>
+                <p>Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

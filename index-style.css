@@ -1,0 +1,402 @@
+/* content-container */
+
+.top-ad{
+    min-width:1200px;
+    height: 150px; 
+    background: url(images/1643855853.jpg);
+    background-position: 50% 0;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+#slideup-ad-img {
+    width: 100%;
+    height: 850px;
+    display: block;
+    position: absolute;
+    top: 188px;
+    left: 0;
+    background: url(images/1643856044.png) no-repeat;
+    background-position: 50%;
+    z-index: 899;
+    transition: 0.7s;
+}
+
+
+        /* 배너 슬라이더 */
+
+        
+.custom-slider{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .custom-box{
+    width: 100%;
+    height: 200px;
+    text-align:center;
+    /* box-shadow: 2px 2px 3px gray; */
+    /* margin: 15px; */
+    font-size: 5em;
+    
+    /* padding: 50px; */
+  }
+  
+  .custom-box img {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .slick-prev, .slick-next{
+    position: absolute;
+    line-height: 65px;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    padding: 12px;  
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    outline: none;
+    border-radius: 50%;
+    background: transparent;
+    z-index: 888;
+    /* text-align: center; */
+  }
+  .slick-slider{
+    user-select: none;
+  }
+  .slick-next{
+    right: 20px;
+  }
+  .slick-prev{
+    left: 20px;
+  }
+  .slick-next:before{
+    content: '\003e';
+    font-size: 4em;
+    font-weight: 600;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .slick-prev:before{
+    content: '\003c';
+    font-size: 4em;
+    font-weight: 600;
+    padding-left: 15px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+        /* 배너슬라이드btn */
+.bn-slide {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.bn-slide li {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    position: relative;
+}
+
+.bn-slide span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bn-slide li span:hover {
+    background: #000;
+    width: 12px;
+    border-radius: 50%;
+    height: 12px;
+}
+
+.bn-slide .bn-active {
+    background: #000;
+    width: 12px;
+    border-radius: 50%;
+    height: 12px;
+}
+
+
+
+        /* event */
+.event-area{
+    margin: 0 auto;
+    height: 600px;
+    width: 1200px;
+    display: block;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-area .event-title {
+    margin: 60px auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+.event-list-wrap {
+    width: 5000px;
+}
+
+.event-list {
+    transition: 0.2s;
+}
+
+
+
+.event-list a {
+    float: left;
+    width: 300px;
+}
+
+.event-list a img {
+    margin-top: 15px;
+}
+
+.event-list a .event-name {
+    color: #000;
+    margin: 8px 0;
+}
+
+.event-list a .event-date {
+    color: #999;
+    font-size: 12px;
+} 
+
+
+        /* 이벤트 슬라이드btn */
+
+
+.event-slide {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.event-slide li {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    position: relative;
+}
+
+.event-slide span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: #eee;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.event-slide span:hover,
+.event-slide .ev-active {
+    background: #000;
+    width: 8px;
+    border-radius: 50%;
+    height: 8px;
+}
+
+
+        /* product-area */
+
+.product-area {
+    width: 100%;
+}
+
+.product-bg{
+    background: url(images/bg_menu.jpg) no-repeat;
+    background-position: 50% 15%;
+    position: relative;
+    height: 1150px;
+    min-width: 1200px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px;
+}
+
+.menu-list {
+    background: url(images/img_menu_list_220228.png) 50% no-repeat;
+    height: 1000px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-list a {
+    display: block;
+}
+
+        /* menu 위치 */
+
+.menu-list div {
+    position: absolute;
+}
+
+.menu-list .icecream {
+    top:195px;
+    left: 683px;
+}
+
+.icecream > a {
+    width: 395px;
+    height: 300px;
+} 
+
+.menu-list .icecreamcake {
+    top:195px;
+    right: 513px;
+}
+
+.icecreamcake > a {
+    width: 275px;
+    height: 470px;
+}
+
+.menu-list .beverage {
+    top:535px;
+    left: 480px;
+}
+
+.beverage > a {
+    width: 230px;
+    height: 365px;
+}
+
+.menu-list .coffee {
+    top:535px;
+    right: 827px;
+}
+
+.coffee > a {
+    width: 325px;
+    height: 290px;
+}
+
+.menu-list .dessert {
+    bottom:113px;
+    right: 827px;
+}
+
+.dessert > a {
+    width: 328px;
+    height: 175px;
+}
+
+.menu-list .gift {
+    bottom: 267px;
+    right: 512px;
+}
+
+.gift > a {
+    width: 275px;
+    height: 180px;
+}
+
+
+        /* order */
+.order-area{
+    height: 350px;
+    width: 100%;
+}
+
+.order-area .center {
+    width: 1205px;
+    margin: 25px auto;
+}
+
+.order-area .store-serch,
+.order-area .delivery {
+    float: left;
+}
+
+.order-area .store-serch p,
+.order-area .delivery p {
+    text-align: center;
+    margin: 35px auto 40px;
+    font-weight: 600;
+}
+
+
+
+        /* sns */
+
+.sns-area{height: 1000px;}
+
+.sns-area .sns-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 100px auto 50px;
+}
+
+.sns-icon {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sns-icon a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.insta-title {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.insta-title::before,
+.insta-title::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 1px;
+    top: 56px;
+    background: #aaa;
+}
+
+.insta-title::before{
+    left: 0;
+}
+
+.insta-title::after {
+    right: 0;
+}
+
+.insta-title-img {
+    clear: both;
+
+    margin-top: 50px;
+}
